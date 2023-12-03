@@ -1,0 +1,29 @@
+<html>
+
+    <body>
+
+        <h1>Products</h1>
+
+        {{message}}
+
+        <table>
+        {% for product in products_in_html %}
+            <tr>
+                <td>
+            {{product.id}}
+        </td>
+        <td>
+            {{product.name}}
+        </td>
+        </tr>
+        {% endfor %}
+        </table>
+
+    </body>
+
+    <form method="post">
+        <input name="form-product-name" />
+        <button type="submit">Save</button>
+    </form>
+
+</html>
